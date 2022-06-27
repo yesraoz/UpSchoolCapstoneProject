@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/afterlogin_activity_nav"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.yesraoz.capstoneproject.fragment.MainPageFragment"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/mainPageswitchtoProductCard"
+            app:destination="@id/productCardFragment" />
+
+        <action
+            android:id="@+id/switchtocategoriesFragment"
+            app:destination="@id/categoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productCardFragment"
+        android:name="com.yesraoz.capstoneproject.fragment.ProductCardFragment"
+        tools:layout="@layout/fragment_product_card" >
+        <action
+            android:id="@+id/action_productCardFragment_to_myBagFragment"
+            app:destination="@id/myBagFragment" />
+        <argument
+            android:name="product"
+            app:argType="com.yesraoz.capstoneproject.Models.Product" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myBagFragment"
+        android:name="com.yesraoz.capstoneproject.fragment.MyBagFragment"
+        android:label="fragment_my_bag"
+        tools:layout="@layout/fragment_my_bag" />
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.yesraoz.capstoneproject.fragment.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" />
+
+
+</navigation>

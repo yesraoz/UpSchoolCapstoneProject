@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "899577497924",
+    "project_id": "fir-authentication-447a7",
+    "storage_bucket": "fir-authentication-447a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899577497924:android:f89a63ef27fcd8a24b6f11",
+        "android_client_info": {
+          "package_name": "com.yesraoz.capstoneproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899577497924-s7j572mdlgae6c92fei3r8jeqne1c4i1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKIkyjPvFUTHPTt-Vp0vXJyyxrtn6-6zI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899577497924-s7j572mdlgae6c92fei3r8jeqne1c4i1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

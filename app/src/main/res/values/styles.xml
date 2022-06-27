@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="inputTextsStyle">
+        <item name="android:background">@drawable/ic_name</item>
+        <item name="android:fontFamily">@font/andika_new_basic</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textColorHint">#9B9B9B</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+</resources>

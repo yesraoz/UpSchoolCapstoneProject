@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/switchtoAfterLogin"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.yesraoz.capstoneproject.fragment.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/switchtoLoginScreen"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.yesraoz.capstoneproject.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/switchtoForgotPasswordScreen"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_afterLoginActivity2"
+            app:destination="@id/afterLoginActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.yesraoz.capstoneproject.fragment.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/actiontologinFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/afterLoginActivity2"
+        android:name="com.yesraoz.capstoneproject.Activity.AfterLoginActivity"
+        android:label="activity_after_login"
+        tools:layout="@layout/activity_after_login" />
+</navigation>
